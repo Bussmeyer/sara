@@ -1,6 +1,7 @@
 const path = require('path');
 const Dotenv = require('dotenv-webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ImageminPlugin = require('imagemin-webpack-plugin').default
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -30,6 +31,7 @@ module.exports = {
       hash: true,
       template: path.join(PATHS.app, '/index.ejs')
     }),
+    new ImageminPlugin({test: /\.(png|jpg|gif)$/}),
     new MiniCssExtractPlugin({
       filename: "[name].css",
       chunkFilename: "[id].css"
