@@ -43,7 +43,6 @@ module.exports = {
      rules: [
        {
          test: /\.css$/,
-         test: /\.css$/,
           use: [
             {
               loader: MiniCssExtractPlugin.loader,
@@ -54,11 +53,20 @@ module.exports = {
           ]
        },
        {
-         test: /\.(png|svg|jpg|gif)$/,
+         test: /\.(svg|gif)$/,
          use: [
            'file-loader'
          ]
-       }
+       },
+       {
+        test: /\.(jpe?g|png)$/i,
+        loader: 'responsive-loader',
+        options: {
+          sizes: [100, 500, 1200, 3000],
+          placeholder: true,
+          placeholderSize: 50
+        }
+      }
      ]
    }
 };
