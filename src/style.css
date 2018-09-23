@@ -1,0 +1,53 @@
+body {
+    background: black;
+}
+
+/* overall alignment */
+.characters {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+/* parent element */
+.hero-pic {
+    display: block;
+    flex-shrink: 0;
+    width: 300px;
+    height: 240px;
+    position: relative;
+    overflow: hidden;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 139px -5px rgba(138,178,209,0.78);
+}
+
+/* placeholder image */
+.hero-preview {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+/* removes the pointer cursor on <a> elements
+   once full image loads */
+.hero-pic:not(.replace) {
+    cursor: default;
+}
+
+/* fades in and positons full image element
+   once it loads */
+.reveal {
+    position: absolute;
+    left: 0;
+    right: 0;
+    will-change: opacity;
+    animation: reveal 1s ease-out;
+}
+
+/* animation for fade in */
+@keyframes reveal {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
