@@ -55,13 +55,13 @@ module.exports = {
           ]
        },
        {
-         test: /\.(svg|gif)$/,
+         test: /\.(svg)$/,
          use: [
            'file-loader'
          ]
        },
        {
-        test: /\.(jpe?g|png)$/i,
+        test: /\.(gif|jpe?g|png)$/i,
         loader: 'responsive-loader',
         options: {
           sizes: [100, 500, 1200, 3000],
