@@ -1,4 +1,4 @@
-function loadFullImages() {
+module.exports = function loadFullImages() {
     let imageEls = [].slice.call(document.querySelectorAll('.hero-pic'));
     imageEls.forEach((imageEl) => {
         loadFullImage(imageEl);
