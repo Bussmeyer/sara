@@ -34,7 +34,7 @@ module.exports = {
       filename: "[name].css",
       chunkFilename: "[id].css"
     })
-   ],
+  ],
   output: {
     filename: 'main.js',
     path: PATHS.build
