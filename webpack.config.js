@@ -29,7 +29,7 @@ module.exports = {
     new CleanWebpackPlugin([PATHS.build]),
     new HtmlWebpackPlugin({
       hash: true,
-      template: path.join(PATHS.app, '/index.ejs')
+      template: path.join(PATHS.app, '/index.html')
     }),
     new ImageminPlugin({test: /\.(png|jpg|gif)$/}),
     new MiniCssExtractPlugin({
