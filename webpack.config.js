@@ -11,7 +11,6 @@ const PATHS = {
 };
 
 module.exports = {
-  mode:'development',
   entry: PATHS.app,
   optimization: {
     minimizer: [
