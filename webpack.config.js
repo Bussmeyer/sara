@@ -27,7 +27,8 @@ module.exports = {
     new Dotenv(),
     new CleanWebpackPlugin([PATHS.build]),
     new HtmlWebpackPlugin({
-        template: path.join(PATHS.app, '/index.ejs')
+      hash: true,
+      template: path.join(PATHS.app, '/index.ejs')
     }),
     new MiniCssExtractPlugin({
       filename: "[name].css",
