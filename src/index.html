@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
   </head>
   <body>
-    <div data-responsive-background-image>
+    <div data-responsive-background-image style="background-image: url(${require('./' + process.env.IMAGE).placeholder});">
       <img src="${require('./' + process.env.IMAGE).src}"
         srcset="${require('./' + process.env.IMAGE).srcSet}" >
     </div>
