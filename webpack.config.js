@@ -78,7 +78,7 @@ module.exports = {
         test: /\.(gif|jpe?g|png)$/i,
         loader: 'responsive-loader',
         options: {
-          sizes: [1200, 500, 100, 3000],
+          sizes: [1500, 1000, 100, 3000],
           placeholder: true,
           placeholderSize: 50
         }

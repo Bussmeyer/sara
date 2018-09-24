@@ -1,7 +1,13 @@
 import './style.css';
-import ResponsiveBackgroundImage from './ResponsiveBackgroundImage'
+import Loadingimage from './loadingimage';
+import Products from './Products';
 
-let elements = document.querySelectorAll('[data-responsive-background-image]');
+let elements = document.querySelectorAll('[splash]');
 for (let i=0; i<elements.length; i++) {
-  new ResponsiveBackgroundImage(elements[i]);
+  new Loadingimage(elements[i]);
 }
+
+const image = document.getElementById('splash-img');
+const options = {};
+const tags = Products;
+const taggd = new Taggd(image, options, tags);

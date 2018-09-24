@@ -5,24 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saras Shop</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/taggd/4.0.0/taggd.css" />
   </head>
   <body>
-    <div data-responsive-background-image style="background-image: url(${require('./' + process.env.IMAGE).placeholder});">
-      <img src="${require('./' + process.env.IMAGE).src}"
+    <div splash>
+      <img
+        splash-img
+        id="splash-img"
+        src="${require('./' + process.env.IMAGE).placeholder}"
+        data-src="${require('./' + process.env.IMAGE).src}"
+        data-srcSet="${require('./' + process.env.IMAGE).srcSet}" />
+      <img
+        splash-pre-img
+        style="display: none;"
+        src="${require('./' + process.env.IMAGE).src}"
         srcset="${require('./' + process.env.IMAGE).srcSet}" >
     </div>
-    <button style="position: absolute; top: 50%; left: 70%"
-            data-tippy="Ex porro deleniti optio. Ducimus dolorum quam et quam. Est tempora aperiam eum odio odio qui sint tempora.
-Veniam ea animi nihil expedita dolorem. Non explicabo hic praesentium non harum quas."
-            class="btn">Kaufe Lampe</button>
-
-    <button style="position: absolute; top: 60%; left: 20%"
-            data-tippy="I'm a tooltip!"
-            class="btn">Hi, kaufe bunte Kugel?</button>
-
-    <button style="position: absolute; top: 70%; left: 20%"
-            data-tippy="I'm a tooltip!"
-            class="btn">Hallo du, Fahrrad?</button>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/taggd/4.0.0/taggd.min.js"></script>
   </body>
 </html>
