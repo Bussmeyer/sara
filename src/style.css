@@ -17,31 +17,6 @@ html, body{
   display: none;
 }
 
-/* parent element */
-.hero-pic {
-    display: block;
-    flex-shrink: 0;
-    width: 1200px;
-    height: 240px;
-    position: relative;
-}
-
-/* placeholder image */
-.hero-preview {
-    width: 100%;
-    position: absolute;
-    left: 0;
-    right: 0;
-}
-
-/* removes the pointer cursor on <a> elements
-   once full image loads */
-.hero-pic:not(.replace) {
-    cursor: default;
-}
-
-/* fades in and positons full image element
-   once it loads */
 .reveal {
     position: absolute;
     left: 0;
@@ -50,7 +25,6 @@ html, body{
     animation: reveal 1s ease-out;
 }
 
-/* animation for fade in */
 @keyframes reveal {
     0% { opacity: 0; }
     100% { opacity: 1; }

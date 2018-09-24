@@ -1,9 +1,4 @@
 module.exports = function loadFullImages() {
-    let imageEls = [].slice.call(document.querySelectorAll('.hero-pic'));
-    imageEls.forEach((imageEl) => {
-        loadFullImage(imageEl);
-    });
-
     /* creates the image element and sets up a callback to add it
        to the page once it loads */
     function loadFullImage(item) {
@@ -31,13 +26,5 @@ module.exports = function loadFullImages() {
                 e.target.classList.remove('reveal');
                 e.target.removeEventListener('animationend', phaseOutPreview);
             })
-    }
-
-    /* removes the default behavior of an <a> element */
-    function removePreviewFeatures(item) {
-        item.classList.remove('replace');
-        item.addEventListener('click', function(e) {
-            e.preventDefault();
-        })
     }
 }
