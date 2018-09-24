@@ -14,6 +14,10 @@ const PATHS = {
 
 module.exports = {
   entry: PATHS.app,
+  devtool: 'inline-source-map',
+  devServer: {
+    contentBase: PATHS.build
+  },
   optimization: {
     minimizer: [
       new UglifyJsPlugin({

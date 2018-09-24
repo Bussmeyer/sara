@@ -20,16 +20,20 @@
     "normalize.css": "^8.0.0",
     "npm": "^6.4.1",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "picturefill": "^3.0.2",
     "responsive-loader": "^1.1.0",
     "style-loader": "^0.23.0",
     "tippy.js": "^3.0.1",
     "uglifyjs-webpack-plugin": "^2.0.1",
     "webpack": "^4.19.1",
-    "webpack-cli": "^3.1.0"
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode=development"
+    "build": "webpack --mode=development",
+    "start": "webpack-dev-server --open --mode=development",
+    "watch": "webpack --watch --mode=development"
   },
   "keywords": [],
   "author": "",
