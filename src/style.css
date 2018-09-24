@@ -39,6 +39,12 @@ html, body{
   margin: 0;
   background-image: none;
   text-align: left;
+
+  border: 3px solid #999;
+  border-radius: 30px;
+  -webkit-animation: pulsate 2s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  opacity: 0.0
 }
 
 .taggd__popup {
@@ -52,4 +58,10 @@ html, body{
   white-space: nowrap;
   background-color: rgba(219, 50, 92, 0.75);
   transform: translateX(-50%);
+}
+
+@-webkit-keyframes pulsate {
+    0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+    50% {opacity: 1.0;}
+    100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
 }
