@@ -9,7 +9,7 @@ Products = [
   }),
   Taggd.Tag.createFromObject({
     position: { x: 0.25, y: 0.8 },
-    text: 'Hallo du, wollen Fahrrad kaufen?',
+    text: '<a href="http://www.google.de">Hallo du, wollen Fahrrad kaufen?</a>',
   }),
   Taggd.Tag.createFromObject({
     position: { x: 0.6, y: 0.8 },
