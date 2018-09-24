@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
   </head>
   <body>
+    <div data-responsive-background-image>
+      <img src="${require('./' + process.env.IMAGE).src}"
+        srcset="${require('./' + process.env.IMAGE).srcSet}" >
+    </div>
+
     <a href="${require('./' + process.env.IMAGE).src}"
         class="hero-pic replace">
         <img src="${require('./' + process.env.IMAGE).placeholder}"
@@ -15,12 +20,12 @@
 Veniam ea animi nihil expedita dolorem. Non explicabo hic praesentium non harum quas."
             class="btn">Kaufe Lampe</button>
 
-    <button style="position: absolute; top: 20%; left: 70%"
+    <button style="position: absolute; top: 60%; left: 20%"
             data-tippy="I'm a tooltip!"
-            class="btn">Hallo du, Schuhe?</button>
+            class="btn">Hi, kaufe bunte Kugel?</button>
 
     <button style="position: absolute; top: 70%; left: 20%"
             data-tippy="I'm a tooltip!"
-            class="btn">Hallo du, Schuhe?</button>
+            class="btn">Hallo du, Fahrrad?</button>
   </body>
 </html>
