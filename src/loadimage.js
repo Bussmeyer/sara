@@ -1,4 +1,4 @@
-class loadingimage {
+class Loadimage {
   constructor(element) {
     this.element = element;
     this.splashImg = element.querySelector('[splash-img]');
@@ -30,4 +30,4 @@ class loadingimage {
     }
   }
 }
-module.exports = loadingimage;
+module.exports = Loadimage;

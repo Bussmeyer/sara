@@ -1,10 +1,11 @@
 import './style.css';
-import Loadingimage from './loadingimage';
-import Products from './Products';
+import Loadimage from './Loadimage';
+const Products = require('./sets/' + process.env.SET + '/products.js');
+
 
 let elements = document.querySelectorAll('[splash]');
 for (let i=0; i<elements.length; i++) {
-  new Loadingimage(elements[i]);
+  new Loadimage(elements[i]);
 }
 
 const image = document.getElementById('splash-img');

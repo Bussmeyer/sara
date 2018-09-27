@@ -12,14 +12,14 @@
       <img
         splash-img
         id="splash-img"
-        src="${require(process.env.IMAGE).placeholder}"
-        data-src="${require(process.env.IMAGE).src}"
-        data-srcSet="${require(process.env.IMAGE).srcSet}" />
+        src="${ require( './sets/' + process.env.SET + '/image.jpg' ).placeholder }"
+        data-src="${ require( './sets/' + process.env.SET + '/image.jpg' ).src }"
+        data-srcSet="${ require( './sets/' + process.env.SET + '/image.jpg' ).srcSet }" />
       <img
         splash-pre-img
         style="display: none;"
-        src="${require(process.env.IMAGE).src}"
-        srcset="${require(process.env.IMAGE).srcSet}" >
+        src="${ require( './sets/' + process.env.SET + '/image.jpg' ).src }"
+        srcset="${ require( './sets/' + process.env.SET + '/image.jpg' ).srcSet }" >
     </div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/taggd/4.0.0/taggd.min.js"></script>
   </body>
